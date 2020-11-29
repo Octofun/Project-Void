@@ -4,5 +4,5 @@ import Home from './containers/home'
 
 ReactDOM.render(
   <Home />,
-  document.getElementById('index')
+  document.getElementById('app')
 )
