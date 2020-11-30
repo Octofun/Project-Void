@@ -13,10 +13,12 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node jam.js",
+    "heroku-postbuild": "ls-all && npm install && npm run bundle",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "bundle": "NODE_ENV=production ./node_modules/.bin/webpack --config webpack.config.js"
   },
   "eslintConfig": {
     "extends": [
