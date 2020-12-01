@@ -1,6 +1,5 @@
 import React from 'react'
-//This needs slight improvement
-//Kp lets have magic here
+
 export default (props) => {
 
   const {children} = props

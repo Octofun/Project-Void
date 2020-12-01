@@ -1,0 +1,29 @@
+.features {
+  padding-bottom: 6rem;
+  background-color: $secondaryBackgroundColor;
+  color: $secondaryFontColor;
+  text-align: center;
+  font-family: 'Trispace', sans-serif;
+
+  &.how-it-works {
+    padding-top: 10rem;
+    margin-top: 10rem;
+    font-family: 'Trispace', sans-serif;
+  }
+
+  .feature {
+    max-width: 280px;
+    margin: 20px;;
+    margin-bottom: 4rem;
+
+    .feature-title {
+      font-size: 2.4rem;
+      color: $primaryColor;
+    }
+
+    svg {
+      vertical-align: middle;
+      margin: 1rem;
+    }
+  }
+}

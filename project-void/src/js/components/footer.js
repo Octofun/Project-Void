@@ -1,24 +1,25 @@
 import React from 'react'
-import {Shield,Users,Lock} from 'react-feather'
+import {Shield, Users, Lock} from 'react-feather'
+
 
 export default (props) => {
 
-    return(
-        <div id='footer'>
-            <div className='container'>
-                <div className='row'>
-                    <h5>Contact Form</h5>
-                    <p>Kp fill up this section</p>
-                </div>
-                <div className='row'>
-                    <h5>About</h5>
-                    <p>Kp fill up this section</p>
-                </div>
-                <div className='row'>
-                    <p>Project-Void is the collective product of 
-                        our headaches.</p>
-                </div>
-            </div>
+  return (
+    <div id='footer'>
+      <div className='container'>
+        <div className='row'>
+          <a href='Contact.html'>Contact Us</a>
+
         </div>
-    )
-} 
+        <div className='row'>
+          <h6>About Us: </h6>
+          <p>Void is a free and open source project, still under development. For source code got to <a href="https://github.com/Octofun/Project-Void.git">https://github.com/Octofun/Project-Void.git</a>.</p>
+        </div>
+        <div className='row'>
+          <p >Created by TeamVOID</p>
+        </div>
+      </div>
+    </div>
+  )
+
+}

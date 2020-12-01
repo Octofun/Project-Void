@@ -5,13 +5,12 @@ export default () => {
   return (
     <div className='hero container'>
       <h3>Invalid room</h3>
-      <p>looks like you have lost your way</p>
-      <p>Check your meeting code</p>
+      <p>It's an invalid link!</p>
       <a
         href="/"
         className='button button-primary'
       >
-        Home
+        Go to Home
       </a>
     </div>
   )
