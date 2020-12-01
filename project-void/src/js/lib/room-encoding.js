@@ -1,5 +1,5 @@
 import shorthash from 'shorthash'
-//THIS FILE is a placeholder...will be soon replaced by better hashing method
+
 function getRoomHash(key, roomName) {
   return shorthash.unique(`${key}${roomName}`)
 }

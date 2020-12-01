@@ -1,4 +1,3 @@
-
 import React from 'react'
 import {encodeRoom} from '../lib/room-encoding'
 
@@ -61,7 +60,7 @@ export default class CreateRoom extends React.Component {
         <form onSubmit={(e) => {e.preventDefault(); this.onCreateRoom(roomValue)}}>
           <input
             type='text'
-            placeholder='e.g. My life is a joke'
+            placeholder='Enter room name'
             value={this.state.roomValue}
             onChange={evt => this.onChange(evt)}
             required
@@ -71,7 +70,7 @@ export default class CreateRoom extends React.Component {
             type='submit'
             className='button-primary'
           >
-            Create Room
+          CREATE
           </button>
         </form>
       </div>

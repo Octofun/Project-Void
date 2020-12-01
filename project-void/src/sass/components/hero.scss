@@ -1,0 +1,31 @@
+.hero {
+  margin-top: 0;
+  background-color: black;
+  text-align: center;
+  padding-bottom: 50px;
+
+  h1 {
+    border: none;
+    margin-top: 0;
+    margin-bottom: 50px;
+    text-align: center;
+    color: white;
+    font-family: 'Trispace', sans-serif;
+    padding-top: 40px;
+    font-size: 2em;
+  }
+  .button {
+    vertical-align: top;
+    background: #393e46;
+    border-top: 10px;
+    border-radius: 80px;
+    color: white;
+    border-color:white;
+    margin-left: 10px;
+    display: inline;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    padding: 10px;
+  }
+
+}

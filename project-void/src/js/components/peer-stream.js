@@ -1,8 +1,7 @@
 import React from 'react'
-// Kp icon fix import {MicOff, User} from 'react-feather'
+import {MicOff, User} from 'react-feather'
 import LoadingIndicator from './loading-indicator'
-//This particular class calculate the dimensions of the screens
-//based of Facetime interface
+
 export default class PeerStream extends React.Component {
 
   constructor(props) {

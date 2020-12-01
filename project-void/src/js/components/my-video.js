@@ -25,7 +25,7 @@ export default class MyVideo extends React.Component {
       if ('srcObject' in this.streamEle) {
         this.streamEle.srcObject = stream
       } else {
-
+        // Older browsers don't support srcObject
         this.streamEle.src = URL.createObjectURL(stream)
       }
     }

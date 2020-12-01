@@ -1,0 +1,29 @@
+#create-room {
+  margin-top: 5rem;
+  text-align: center;
+
+  input {
+    width: 24rem;
+    margin-right: 1rem;
+    background-color: #393e46 ;
+    border:none;
+    color: #fff;
+    font-size: 1em;
+    padding: 0.4em;
+    width: 30%;
+    margin:0;
+  }
+
+  button {
+    vertical-align: top;
+    background: #393e46;
+    border-top: 10px;
+    border-radius: 80px;
+    color: white;
+    border-color:white;
+    margin-left: 10px;
+    display: inline;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+  }
+}

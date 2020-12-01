@@ -5,7 +5,7 @@ import {User} from 'react-feather';
 import AwaitingPeers from './awaiting-peers'
 import InitializingSwarm from './initializing-swarm'
 import PeerStream from './peer-stream'
-//This calculates the positions of the video screens
+
 export default class PeerStreams extends React.Component {
 
   constructor(props) {

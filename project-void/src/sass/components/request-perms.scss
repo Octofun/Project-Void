@@ -1,0 +1,21 @@
+#request-perms {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Trispace', sans-serif;
+
+  button {
+    background: #393e46;
+    border-top: 30px;
+    border-radius: 80px;
+    color: white;
+    border-color:white;
+    margin-left: 10px;
+    display: inline;
+    font-family: 'Trispace', sans-serif;
+    font-size: 1.2em;
+  }
+}
