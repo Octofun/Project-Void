@@ -7,13 +7,13 @@ export default (props) => {
   return (
     <div id='footer'>
       <div className='container'>
+      <p>Void is a free and open source project, still under development. For source code go to <a href="https://github.com/Octofun/Project-Void.git">Project VOID</a>.</p>
         <div className='row'>
-          <a href='Contact.html'>Contact Us</a>
+          <a href='/contact'>Contact Us</a>
 
         </div>
         <div className='row'>
-          <h6>About Us: </h6>
-          <p>Void is a free and open source project, still under development. For source code got to <a href="https://github.com/Octofun/Project-Void.git">https://github.com/Octofun/Project-Void.git</a>.</p>
+        <a href='/aboutUS'>About Us</a>
         </div>
         <div className='row'>
           <p >Created by TeamVOID</p>

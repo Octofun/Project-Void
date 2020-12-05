@@ -5,25 +5,95 @@
   text-align: center;
   font-family: 'Trispace', sans-serif;
 
+  .front {
+    z-index: 2;
+    /* for firefox 31 */
+    transform: rotateY(0deg);
+    width: 200px;
+    height: 200px;
+  }
+
+
+
   &.how-it-works {
     padding-top: 10rem;
     margin-top: 10rem;
     font-family: 'Trispace', sans-serif;
-  }
+
+    .icon{
+      margin:80px;
+    }
+    /* entire container, keeps perspective */
+}
 
   .feature {
-    max-width: 280px;
-    margin: 20px;;
-    margin-bottom: 4rem;
+    margin:20px;
+    display: inline-block;
+    width:170px;
 
     .feature-title {
-      font-size: 2.4rem;
+      font-size: 2.3rem;
+
       color: $primaryColor;
     }
 
     svg {
-      vertical-align: middle;
-      margin: 1rem;
+      vertical-align: sub;
+      display:inline-block;
+      margin: 0.5rem;
     }
   }
+
+.flip-container {
+  perspective: 1000px;
+  display: inline-block;
+  margin:20px;
+  text-align: center;
+
+}
+  /* flip the pane when hovered */
+  .flip-container:hover .flipper, .flip-container.hover .flipper {
+    transform: rotateY(180deg);
+  }
+
+.flip-container, .front, .back {
+  width: 250px;
+  height: 250px;
+  text-align: center;
+
+
+}
+
+/* flip speed goes here */
+.flipper {
+  transition: 0.9s;
+  transform-style: preserve-3d;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+  backface-visibility: hidden;
+  box-shadow: 0 4px 9px 0 rgba(0.5,0,0,0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+  z-index: 2;
+  /* for firefox 31 */
+  transform: rotateY(0deg);
+  width: 220px;
+  height: 200px;
+}
+
+/* back, initially hidden pane */
+.back {
+  transform: rotateY(180deg);
+  margin-top: 7px;
+  padding:20px;
+
+}
+
 }

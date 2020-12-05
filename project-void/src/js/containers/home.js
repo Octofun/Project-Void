@@ -10,7 +10,8 @@ import Features from '../components/features'
 import Footer from '../components/footer'
 import Goodbye from '../components/goodbye'
 import NotFound from '../components/not-found'
-
+import ContactUS from '../components/conta'
+import AboutUS from '../components/aboutU'
 export default class Home extends React.Component {
 
   constructor(props) {
@@ -45,6 +46,18 @@ export default class Home extends React.Component {
     } else if (pathname === '/goodbye') {
       this.state = {
         route: 'goodbye'
+      }
+
+    }
+    else if (pathname === '/contact') {
+      this.state = {
+        route: 'contactus'
+      }
+    }
+
+    else if (pathname === '/aboutUS') {
+      this.state = {
+        route: 'aboutus'
       }
     }
 
@@ -90,7 +103,12 @@ export default class Home extends React.Component {
   render404() {
     return <NotFound />
   }
-
+  renderCont(){
+    return <ContactUS />
+  }
+  renderAbot(){
+    return <AboutUS />
+  }
   render() {
 
     const {route} = this.state
@@ -100,6 +118,8 @@ export default class Home extends React.Component {
       'chat': this.renderChat,
       'goodbye': this.renderGoodbye,
       '404': this.render404,
+      'contactus':this.renderCont,
+      'aboutus':this.renderAbot,
     }
 
     return pages[route].bind(this)()
