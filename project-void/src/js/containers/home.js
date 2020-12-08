@@ -11,7 +11,7 @@ import Footer from '../components/footer'
 import Goodbye from '../components/goodbye'
 import NotFound from '../components/not-found'
 import ContactUS from '../components/conta'
-import aboutUS from '../components/aboutU'
+import AboutUS from '../components/aboutU'
 export default class Home extends React.Component {
 
   constructor(props) {
@@ -47,18 +47,18 @@ export default class Home extends React.Component {
       this.state = {
         route: 'goodbye'
       }
-      
+
     }
     else if (pathname === '/contact') {
       this.state = {
         route: 'contactus'
-      } 
+      }
     }
-    
+
     else if (pathname === '/aboutUS') {
       this.state = {
         route: 'aboutus'
-      } 
+      }
     }
 
      else {

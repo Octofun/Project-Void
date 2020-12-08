@@ -1,0 +1,122 @@
+
+  .conta{
+    text-align:center;
+    margin:100px;
+    font-family: 'Trispace', sans-serif;
+    label {
+      display:inline-block;
+      width:290px;
+      text-align: left;
+  }
+
+    .button{
+      vertical-align: top;
+      background: #393e46;
+      border-top: 10px;
+      border-radius: 80px;
+      color: white;
+      border-color:white;
+      margin: 100px;
+      display:block;
+      font-family: 'Trispace', sans-serif;
+      font-size: 1em;
+      position: relative;
+      left:200px;
+    }
+  }
+.about{
+  text-align: center;
+  align-content: center;
+  display: inline-block;
+  font-family: 'Trispace', sans-serif;
+  margin-top:30px;
+  .row{
+    margin-top: 100px;
+  }
+  .feature {
+    margin:50px;
+    display: inline;
+    width:170px;
+
+    .feature-title {
+      font-size: 2rem;
+      margin:20px;
+      color: $fontColor;
+    }
+
+    svg {
+      vertical-align: sub;
+      display:inline-block;
+      margin: 1rem;
+    }
+  }
+
+.flip-container {
+  perspective: 1000px;
+  display: inline-block;
+  margin:50px;
+  text-align: center;
+
+}
+  /* flip the pane when hovered */
+  .flip-container:hover .flipper, .flip-container.hover .flipper {
+    transform: rotateY(180deg);
+  }
+
+.flip-container, .front, .back {
+  width: 270px;
+  height: 250px;
+  text-align: center;
+
+}
+
+/* flip speed goes here */
+.flipper {
+  transition: 0.9s;
+  transform-style: preserve-3d;
+
+}
+
+/* hide back of pane during swap */
+.front, .back {
+  backface-visibility: hidden;
+  box-shadow: 0 1px 9px 0 #bbbfca;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+  z-index: 2;
+  /* for firefox 31 */
+  transform: rotateY(0deg);
+  width: 250px;
+  height: 350px;
+  padding-left: 20px;
+}
+
+/* back, initially hidden pane */
+.back {
+  transform: rotateY(180deg);
+  margin-top: 10px;
+  padding:40px;
+
+}
+
+
+  .button{
+    vertical-align: top;
+    background: #393e46;
+    border-top: 10px;
+    border-radius: 80px;
+    color: white;
+    border-color:white;
+    margin: 200px;
+    display:inline;
+    font-family: 'Trispace', sans-serif;
+    font-size: 1em;
+
+  }
+
+}

@@ -1,0 +1,33 @@
+body{
+  text-align: center;
+  margin-top: 200px;
+}
+label {
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+  font-family: 'Trispace', sans-serif;
+}
+
+#submit_button {
+  vertical-align: top;
+  background: #393e46;
+  border-top: 10px;
+  border-radius: 80px;
+  color: white;
+  border-color:white;
+  margin: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2em;
+  padding: 10px;
+}
+
+input, textarea {
+  background-color: #D3D3D3;
+  color: #2F4F4F;
+  width: 250px;
+  margin-bottom: 10px;
+  box-shadow: 5px 5px 2px 2px #696969;
+
+
+}
