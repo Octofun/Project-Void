@@ -1,6 +1,6 @@
 import React from 'react'
 import classNames from 'classnames'
-import {Mic, MicOff, X, Video, VideoOff} from 'react-feather';
+import {Mic, MicOff, X, Video, VideoOff,MessageCircle,Airplay} from 'react-feather';
 
 export default class Controls extends React.Component {
 
@@ -47,7 +47,7 @@ export default class Controls extends React.Component {
 
     const {
       audioOn, videoOn, audioEnabled, videoEnabled, handleHangUp,
-      handleVideoToggle, handleAudioToggle
+      handleVideoToggle, handleAudioToggle, handleChat, handleScreenSharing
     } = this.props
     const {showControls} = this.state
 
@@ -66,6 +66,12 @@ export default class Controls extends React.Component {
         </button>
         <button id='hang-up' className='button-primary control' onClick={handleHangUp}>
           <X />
+        </button>
+        <button id='Airplay' className='button-primary control' onClick={handleScreenSharing}>
+          <Airplay />
+        </button>
+        <button id='Chat' className='button-primary control' onClick={handleChat}>
+          <MessageCircle />
         </button>
         <button className={audioClassNames} onClick={handleAudioToggle} disabled={!audioEnabled}>
           { audioOn && audioEnabled ? <Mic /> : <MicOff /> }

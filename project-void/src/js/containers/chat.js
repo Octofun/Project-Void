@@ -264,6 +264,14 @@ export default class Chat extends React.Component {
     window.location = `${window.location.origin}/goodbye`
 
   }
+  handleChat() {
+    window.location = `${window.location.origin}/goodbye`
+  }
+
+  handleScreenSharing() {
+    window.location = `${window.location.origin}/goodbye`
+  }
+
 
   render() {
 
@@ -335,6 +343,8 @@ export default class Chat extends React.Component {
               handleAudioToggle={this.handleAudioToggle.bind(this)}
               handleVideoToggle={this.handleVideoToggle.bind(this)}
               handleHangUp={this.handleHangUp.bind(this)}
+              handleChat={this.handleChat.bind(this)}
+              handleScreenSharing={this.handleScreenSharing.bind(this)}
               expanded={!swarmInitialized || awaitingPeers}
             />
           ) : null

@@ -7,7 +7,7 @@ export default function(props) {
 
   const {
     stream, audioOn, videoOn, audioEnabled, videoEnabled, handleHangUp,
-    handleVideoToggle, handleAudioToggle, expanded
+    handleVideoToggle, handleAudioToggle, handleChat,handleScreenSharing, expanded
   } = props
 
   const myStreamClassNames = classNames({expanded})
@@ -23,6 +23,9 @@ export default function(props) {
         handleAudioToggle={handleAudioToggle}
         handleVideoToggle={handleVideoToggle}
         handleHangUp={handleHangUp}
+        handleChat={handleChat}
+        handleScreenSharing = {handleScreenSharing}
+
       />
     </div>
   )
