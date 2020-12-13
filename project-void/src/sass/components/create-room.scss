@@ -15,15 +15,22 @@
   }
 
   button {
-    vertical-align: top;
-    background: #393e46;
-    border-top: 10px;
-    border-radius: 80px;
-    color: white;
-    border-color:white;
-    margin-left: 10px;
+    border: none;
+    background: #404040;
+    color: #ffffff !important;
+    font-weight: 150;
+    border-radius: 6px;
     display: inline;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1em;
+    transition: all 0.3s ease 0s;
+    margin-left: 10px;
+  }
+  button:hover {
+  color: white;
+  font-weight: 800 !important;
+  letter-spacing: 3px;
+  background: none;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  transition: all 0.3s ease 0s;
   }
 }
