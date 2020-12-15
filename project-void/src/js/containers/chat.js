@@ -4,6 +4,7 @@ import uuidv4 from 'uuid/v4'
 import signalhub from 'signalhub'
 import {decodeRoom} from '../lib/room-encoding'
 import getMyStream from '../lib/media'
+import getMyScreen from '../lib/screenplay'
 import Header from '../components/header'
 import MyStream from '../components/my-stream'
 import PeerStreams from '../components/peer-streams'
@@ -45,13 +46,15 @@ export default class Chat extends React.Component {
   }
 
   async handleRequestPerms() {
-
     const {myStream, audioEnabled, videoEnabled} = await getMyStream()
     console.log({audioEnabled, videoEnabled})
     this.setState({initialized: true, myStream, audioEnabled, videoEnabled})
-
   }
-
+  async handleScreenPerms(){
+    const {myStream, audioEnabled, videoEnabled} = await getMyScreen()
+    console.log({audioEnabled, videoEnabled})
+    this.setState({initialized: true, myStream, audioEnabled, videoEnabled})
+  }
   async handleSetNickname(nickname) {
 
     this.setState({
@@ -198,6 +201,7 @@ export default class Chat extends React.Component {
         peerStreams[id].videoOn = data.enabled
         this.setState({peerStreams})
       }
+    
 
     })
 
@@ -259,8 +263,9 @@ export default class Chat extends React.Component {
 
   }
 
-  handleHangUp() {
 
+
+  handleHangUp() {
     window.location = `${window.location.origin}/goodbye`
 
   }
@@ -268,9 +273,6 @@ export default class Chat extends React.Component {
     window.location = `${window.location.origin}/goodbye`
   }
 
-  handleScreenSharing() {
-    window.location = `${window.location.origin}/goodbye`
-  }
 
 
   render() {
@@ -344,7 +346,6 @@ export default class Chat extends React.Component {
               handleVideoToggle={this.handleVideoToggle.bind(this)}
               handleHangUp={this.handleHangUp.bind(this)}
               handleChat={this.handleChat.bind(this)}
-              handleScreenSharing={this.handleScreenSharing.bind(this)}
               expanded={!swarmInitialized || awaitingPeers}
             />
           ) : null
