@@ -1,7 +1,7 @@
 import React from 'react'
 import classNames from 'classnames'
-import {Mic, MicOff, X, Video, VideoOff,MessageCircle,Airplay} from 'react-feather';
-
+import {Mic, MicOff, X, Video, VideoOff,Airplay,MessageCircle} from 'react-feather'
+import UseAnimations from 'react-useanimations'
 export default class Controls extends React.Component {
 
   constructor(props) {
@@ -64,11 +64,11 @@ export default class Controls extends React.Component {
         <button className={videoClassNames} onClick={handleVideoToggle} disabled={!videoEnabled}>
           { videoOn && videoEnabled ? <Video /> : <VideoOff /> }
         </button>
-        <button id='hang-up' className='button-primary control' onClick={handleHangUp}>
-          <X />
-        </button>
         <button id='Airplay' className='button-primary control' onClick={handleScreenSharing}>
           <Airplay />
+        </button>
+        <button id='hang-up' className='button-primary control' onClick={handleHangUp}>
+          <X />
         </button>
         <button id='Chat' className='button-primary control' onClick={handleChat}>
           <MessageCircle />

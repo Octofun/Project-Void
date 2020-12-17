@@ -272,7 +272,9 @@ export default class Chat extends React.Component {
   handleChat() {
     window.location = `${window.location.origin}/goodbye`
   }
-
+  handleScreenSharing(){
+    handleScreenPerms
+  }
 
 
   render() {
@@ -344,6 +346,7 @@ export default class Chat extends React.Component {
               videoEnabled={videoEnabled}
               handleAudioToggle={this.handleAudioToggle.bind(this)}
               handleVideoToggle={this.handleVideoToggle.bind(this)}
+              handleScreenSharing={this.handleScreenPerms.bind(this)}
               handleHangUp={this.handleHangUp.bind(this)}
               handleChat={this.handleChat.bind(this)}
               expanded={!swarmInitialized || awaitingPeers}

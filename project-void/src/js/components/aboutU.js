@@ -1,5 +1,5 @@
-import React from 'react'
-
+import React from 'react';
+import {Home} from 'react-feather';
 export default () => {
 
     return(
@@ -87,7 +87,6 @@ export default () => {
 
 
                 </div>
-            <input type="button" value="Go Home" className="button"/>
         </div>
     )
 }

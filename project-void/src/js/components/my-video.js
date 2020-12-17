@@ -37,7 +37,7 @@ export default class MyVideo extends React.Component {
 
     if (videoEnabled && videoOn) {
       return (
-        <video ref={ele => {this.streamEle = ele}} id='my-video' autoPlay muted />
+        <video ref={ele => {this.streamEle = ele}} draggable="true" id='my-video' autoPlay muted />
       )
     } else {
       return (

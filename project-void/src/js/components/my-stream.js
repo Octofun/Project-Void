@@ -6,7 +6,7 @@ import MyVideo from './my-video'
 export default function(props) {
 
   const {
-    stream, audioOn, videoOn, audioEnabled, videoEnabled, handleHangUp,
+    stream, audioOn, videoOn ,audioEnabled, videoEnabled, handleHangUp,
     handleVideoToggle, handleAudioToggle, handleChat,handleScreenSharing, expanded
   } = props
 
