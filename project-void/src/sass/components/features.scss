@@ -1,10 +1,13 @@
+
 .features {
-  padding-bottom: 6rem;
-  background-color: $secondaryBackgroundColor;
-  color: $secondaryFontColor;
+  padding-bottom: 4rem;
+  background-image: linear-gradient(to bottom, #010509, #141718, #202324, #2e3030, #3c3e3d);
+  color: white;
   text-align: center;
   font-family: 'Trispace', sans-serif;
-
+ h3{
+   margin-bottom: 70px;
+ }
   .front {
     z-index: 2;
     /* for firefox 31 */
@@ -19,7 +22,7 @@
     padding-top: 10rem;
     margin-top: 10rem;
     font-family: 'Trispace', sans-serif;
-
+    background-image: linear-gradient(to top, #010509, #141718, #202324, #2e3030, #3c3e3d);
     .icon{
       margin:80px;
     }
@@ -32,28 +35,29 @@
     width:170px;
 
     .feature-title {
-      font-size: 2.3rem;
+      font-size: 1.5rem;
 
-      color: $primaryColor;
+      color: white;
     }
 
     svg {
       vertical-align: sub;
       display:inline-block;
-      margin: 0.5rem;
+      margin:30px;
     }
   }
 
 .flip-container {
   perspective: 1000px;
   display: inline-block;
-  margin:20px;
+  margin:30px;
   text-align: center;
 
 }
   /* flip the pane when hovered */
   .flip-container:hover .flipper, .flip-container.hover .flipper {
     transform: rotateY(180deg);
+
   }
 
 .flip-container, .front, .back {
@@ -66,17 +70,19 @@
 
 /* flip speed goes here */
 .flipper {
-  transition: 0.9s;
+  transition: 0s ease;
   transform-style: preserve-3d;
 }
 
 /* hide back of pane during swap */
 .front, .back {
   backface-visibility: hidden;
-  box-shadow: 0 4px 9px 0 rgba(0.5,0,0,0.7);
+
   position: absolute;
   top: 0;
   left: 0;
+  border-radius: 40px;
+  background-image: linear-gradient(to right, #010509, #171a1b, #272a2a, #383b3a, #4b4c4b);
 }
 
 /* front pane, placed above back */
@@ -86,14 +92,22 @@
   transform: rotateY(0deg);
   width: 220px;
   height: 200px;
+  background-color: none;
+
 }
 
 /* back, initially hidden pane */
 .back {
   transform: rotateY(180deg);
+  width: 300px;
+  height: 280px;
   margin-top: 7px;
-  padding:20px;
-
+  padding:40px;
+ svg {
+   vertical-align: sub;
+   display:inline-block;
+   margin:30px;
 }
 
+}
 }
